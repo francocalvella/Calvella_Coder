@@ -55,6 +55,7 @@ namespace FCalvellaAPI.Repository
                 cmd.Parameters.Add(idUserParam);
 
                 cmd.ExecuteNonQuery();
+                connection.Close();
             }
         }
         public static void EditarProducto(Producto prod)
